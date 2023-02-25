@@ -1,0 +1,21 @@
+.service-card {
+    min-height: 212px;
+    max-width: 290px;
+    margin: 0 40px 50px 0;
+
+    .service-icon {
+        width: 64px;
+        height: 64px;
+    }
+
+    .service-h {
+        font-size: 24px;
+        color: var(--color-text-dark);
+        margin: 53px 0;
+    }
+
+    .service-p {
+        font-size: 20px;
+        color: var(--color-text-dark);
+    }
+}

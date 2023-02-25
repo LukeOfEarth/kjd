@@ -1,23 +1,26 @@
 import React from 'react';
-import styled from 'styled-components';
+import { BtnPrimary } from '../common';
+
+import "./nav.scss";
+
+import logo from "../../assets/img/logo.svg";
 
 export const Navbar : React.FC = () => {
 
     return (
-        <>
-            <_Navbar>
-
-            </_Navbar>
-        </>
+        <nav>
+            <div className='nav-inner'>
+                <img src={logo} />
+                <ul>
+                    <li><a href='#'>Services</a></li>
+                    <li><a href='#'>Industries</a></li>
+                    <li><a href='#'>Cases</a></li>
+                    <li><a href='#'>Contact</a></li>
+                </ul>
+                <div className='btn-con'>
+                    <BtnPrimary text={`Let's Talk`} onClick={() => {}}/>
+                </div>
+            </div>
+        </nav>
     );
 }
-
-const _Navbar = styled.nav`
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 80px;
-    padding: 0 80px;
-    background-color: var(--color-primary);
-`;
