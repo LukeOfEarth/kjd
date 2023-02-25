@@ -1,5 +1,5 @@
 import React from 'react';
-import { SubHeading, HeadingDark } from '../common';
+import { SubHeadingDark, HeadingDark } from '../common';
 
 import "./services-section.scss";
 import { ServicesCard } from './ServicesCard';
@@ -27,7 +27,7 @@ export const ServicesSection : React.FC = () => {
     return (
         <section className='services-sec'>
             <HeadingDark text='What we do' />
-            <SubHeading text='We offer a complete range of bespoke design and development services to help you turn your ideas into digital masterpieces' />
+            <SubHeadingDark text='We offer a complete range of bespoke design and development services to help you turn your ideas into digital masterpieces' />
             <ul className='services-con'>
                 {
                     SERVICES.map((el, i) => <ServicesCard heading={el.heading} subheading={el.subheading} key={i} />)

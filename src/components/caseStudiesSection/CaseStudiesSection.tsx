@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeadingDark, SubHeading } from '../common';
+import { HeadingDark } from '../common';
 
 import "./case-studies-section.scss";
 import { CaseStudiesCard } from './CaseStudiesCard';

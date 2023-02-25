@@ -10,7 +10,7 @@ export const Navbar : React.FC = () => {
     return (
         <nav>
             <div className='nav-inner'>
-                <img src={logo} />
+                <img className='logo' src={logo} />
                 <ul>
                     <li><a href='#'>Services</a></li>
                     <li><a href='#'>Industries</a></li>

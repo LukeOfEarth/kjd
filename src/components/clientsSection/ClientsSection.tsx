@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeadingDark, SubHeading } from '../common';
+import { HeadingDark, SubHeadingDark } from '../common';
 
 import "./clients-section.scss";
 
@@ -41,10 +41,10 @@ export const ClientsSections : React.FC = () => {
     return (
         <section className='clients-sec'>
             <HeadingDark text='You’ll be in good company' />
-            <SubHeading text='Trusted by leading brands' />
+            <SubHeadingDark text='Trusted by leading brands' />
             <ul className='clients-con'>
                 {
-                    CLIENTS.map((el, i) => <img className='client-img' src={el} key={i} />)
+                    CLIENTS.map((el, i) => <li><img className='client-img' src={el} key={i} /></li>)
                 }
             </ul>
         </section>

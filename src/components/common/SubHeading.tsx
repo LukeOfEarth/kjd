@@ -3,8 +3,14 @@ import { IHeading } from '../../types';
 
 import "./subheading.scss";
 
-export const SubHeading : React.FC<IHeading> = ({text}) => {
+export const SubHeadingLight : React.FC<IHeading> = ({text}) => {
     return (
         <h3 className='body-h'>{text}</h3>
+    );
+} 
+
+export const SubHeadingDark : React.FC<IHeading> = ({text}) => {
+    return (
+        <h3 className='body-h dark'>{text}</h3>
     );
 } 
