@@ -1,3 +1,16 @@
 .clients-sec {
     padding: 72px 80px 0 80px;
+    display: flex;
+    flex-direction: column;
+
+    .clients-con {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 1280px;
+        padding: 0;
+        align-self: center;
+    }
 }
