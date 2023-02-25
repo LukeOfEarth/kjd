@@ -44,7 +44,7 @@ export const ClientsSections : React.FC = () => {
             <SubHeadingDark text='Trusted by leading brands' />
             <ul className='clients-con'>
                 {
-                    CLIENTS.map((el, i) => <li><img className='client-img' src={el} key={i} /></li>)
+                    CLIENTS.map((el, i) => <li><img className='clients-img' src={el} key={i} /></li>)
                 }
             </ul>
         </section>

@@ -5,12 +5,12 @@ import "./subheading.scss";
 
 export const SubHeadingLight : React.FC<IHeading> = ({text}) => {
     return (
-        <h3 className='body-h'>{text}</h3>
+        <h3 className='body-sub-h'>{text}</h3>
     );
 } 
 
 export const SubHeadingDark : React.FC<IHeading> = ({text}) => {
     return (
-        <h3 className='body-h dark'>{text}</h3>
+        <h3 className='body-sub-h dark'>{text}</h3>
     );
 } 

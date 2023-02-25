@@ -11,7 +11,11 @@
     .service-h {
         font-size: 24px;
         color: var(--color-text-dark);
-        margin: 53px 0;
+        margin: 52px 0;
+
+        @media (max-width: $medium) {
+            margin: 27px 0;
+        }
     }
 
     .service-p {

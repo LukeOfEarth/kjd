@@ -1,5 +1,9 @@
 .case-studies-sec {
-    padding: 73px 80px 0 80px;
+    padding: 72px 80px 0 80px;
+
+    @media (max-width: $small) {
+        padding: 18px 24px 0 24px;
+    }
 
     .case-studies-con {
         display: flex;

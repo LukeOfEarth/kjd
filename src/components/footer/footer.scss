@@ -3,10 +3,29 @@ footer {
     background-color: var(--color-primary-dark);
     padding: 70px 80px;
 
+    @media (max-width: $small) {
+        padding: 18px 24px;
+    }
+
+    .footer-sub-h {
+        max-width: $large;
+        color: var(--color-text-mid-light);
+        font-size: 48px;
+        margin: 0 0 54px 0;
+
+        @media (max-width: 980px) {
+            font-size: 24px;
+        }
+    }
+
     .footer-con {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+
+        @media (max-width: 1630px) {
+            flex-direction: column;
+        }
     }
 
     .footer-sub-con {
@@ -29,14 +48,33 @@ footer {
         flex-direction: column;
         flex-wrap: wrap;
         max-height: 100px;
+
+        @media (max-width: $medium) {
+            flex-wrap: nowrap;
+            max-height: unset;
+        }
     }
 
     li {
         list-style: none;
     }
 
-    p {
+    p, .c {
         margin: 0;
         font-size: 20px;
+    }
+
+    .address {
+        @media (max-width: 1630px) {
+            margin-top: 60px;
+        }
+    }
+
+    .tail {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+        margin-top: 72px;
     }
 }
