@@ -16,6 +16,11 @@
   -webkit-text-size-adjust: 100%;
 }
 
+@font-face {
+  font-family: 'Inter-Regular';
+  src: local('Inter-Regular'), url(./assets/fonts/Inter-Regular.woff2) format('woff2');
+}
+
 body {
   width: 100%;
   height: 100%;

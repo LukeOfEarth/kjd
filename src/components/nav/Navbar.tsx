@@ -9,7 +9,9 @@ export const Navbar : React.FC = () => {
     return (
         <nav>
             <div className='nav-inner'>
-                <img className='logo' src={logo} />
+                <a href='#'>
+                    <img className='logo' src={logo} />
+                </a>
                 <ul>
                     <li><a href='#'>Services</a></li>
                     <li><a href='#'>Industries</a></li>
