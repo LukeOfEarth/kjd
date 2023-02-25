@@ -1,7 +1,7 @@
 import React from 'react';
 import { IHeading } from '../../types';
 
-import "./subheading.scss";
+import "./heading.scss";
 
 export const HeadingLight : React.FC<IHeading> = ({text}) => {
     return (

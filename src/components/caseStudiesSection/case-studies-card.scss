@@ -1,0 +1,33 @@
+.case-studies-card {
+    background-color: black;
+
+    width: 400px;
+    height: 400px;
+    margin-right: 41px;
+    padding: 24px;
+    display: flex;
+
+    .case-studies-img {
+
+    }
+
+    .case-studies-txt-con {
+        align-self: flex-end;
+    }
+
+    .case-studies-h {
+        font-size: 32px;
+        margin: 16px 0;
+    }
+
+    .case-studies-p {
+        font-size: 24px;
+    }
+
+    .decorator {
+        width: 40px;
+        height: 4px;
+        background-color: var(--color-primary);
+        margin-right: 20px;
+    }
+}
