@@ -1,9 +1,11 @@
+@use "../../variables";
+
 .clients-sec {
     padding: 72px 80px 0 80px;
     display: flex;
     flex-direction: column;
 
-    @media (max-width: $small) {
+    @media (max-width: variables.$small) {
         padding: 18px 24px 0 24px;
     }
 
@@ -17,16 +19,16 @@
         padding: 0;
         align-self: center;
 
-        @media (max-width: $medium) {
+        @media (max-width: variables.$medium) {
             justify-content: space-between;
         }
 
-        @media (max-width: $small) {
+        @media (max-width: variables.$small) {
             justify-content: center;
         }
 
         .clients-img {
-            @media (max-width: $medium) {
+            @media (max-width: variables.$medium) {
                 width: 128px;
                 height: 60px;
             }

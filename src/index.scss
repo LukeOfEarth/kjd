@@ -1,6 +1,4 @@
-$large: 1000px;
-$medium: $medium;
-$small: 540px;
+@use "colors";
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -16,14 +14,6 @@ $small: 540px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
-  --color-primary: #70259B;
-  --color-primary-dark: #430964;
-  --color-secondary: #ffffff;
-  --color-text-dark: #000000;
-  --color-text-mid-dark: #242424;
-  --color-text-mid-light: #F5F5F5;
-  --color-active: #D100C9;
 }
 
 body {
@@ -32,4 +22,8 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden; 
+}
+
+a:hover {
+  color: colors.$active;
 }

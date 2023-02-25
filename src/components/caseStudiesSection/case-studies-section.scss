@@ -1,7 +1,9 @@
+@use "../../variables";
+
 .case-studies-sec {
     padding: 72px 80px 0 80px;
 
-    @media (max-width: $small) {
+    @media (max-width: variables.$small) {
         padding: 18px 24px 0 24px;
     }
 

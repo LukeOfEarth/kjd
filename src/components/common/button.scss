@@ -1,3 +1,5 @@
+@use "../../colors";
+
 button {
     width: 100%;
     height: 100%;
@@ -5,13 +7,25 @@ button {
 }
 
 .primary {
-    background-color: var(--color-secondary);
-    border: 1px solid var(--color-secondary);
-    color: var(--color-primary);
+    background-color: colors.$secondary;
+    border: 1px solid colors.$secondary;
+    color: colors.$primary;
 }
 
 .secondary {
-    background-color: var(--color-primary);
-    border: 1px solid var(--color-primary);
-    color: var(--color-secondary);
+    background-color: colors.$primary;
+    border: 1px solid colors.$primary;
+    color: colors.$secondary;
+}
+
+.primary:hover {
+    background-color: colors.$active;
+    border: 1px solid colors.$active;
+    color: colors.$secondary;
+}
+
+.secondary:hover {
+    background-color: colors.$secondary;
+    border: 1px solid colors.$secondary;
+    color: colors.$primary;
 }

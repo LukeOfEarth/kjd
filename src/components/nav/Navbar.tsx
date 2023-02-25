@@ -3,10 +3,9 @@ import { BtnPrimary } from '../common';
 
 import "./nav.scss";
 
-import logo from "../../assets/img/logo.svg";
+import logo from "../../assets/img/logo-light.png";
 
 export const Navbar : React.FC = () => {
-
     return (
         <nav>
             <div className='nav-inner'>

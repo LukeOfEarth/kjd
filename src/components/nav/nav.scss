@@ -1,5 +1,7 @@
+@use "../../colors";
+
 nav {
-    background-color: var(--color-primary);
+    background-color: colors.$primary;
     height: 80px;
     top: 0;
     left: 0;
@@ -33,7 +35,7 @@ nav {
 
         a {
             padding: 8px 16px;
-            color: var(--color-secondary);
+            color: colors.$secondary;
             text-decoration: none;
         }
     }

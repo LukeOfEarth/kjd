@@ -1,3 +1,6 @@
+@use "../../variables";
+@use "../../colors";
+
 .service-card {
     min-height: 212px;
     max-width: 290px;
@@ -10,16 +13,16 @@
 
     .service-h {
         font-size: 24px;
-        color: var(--color-text-dark);
+        color: colors.$text-dark;
         margin: 52px 0;
 
-        @media (max-width: $medium) {
+        @media (max-width: variables.$medium) {
             margin: 27px 0;
         }
     }
 
     .service-p {
         font-size: 20px;
-        color: var(--color-text-dark);
+        color: colors.$text-dark;
     }
 }
