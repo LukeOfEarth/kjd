@@ -4,17 +4,21 @@
     background-color: black;
 
     width: 400px;
-    height: 400px;
+    max-height: 400px;
     margin-right: 41px;
-    padding: 24px;
     display: flex;
+    overflow: auto;
 
     .case-studies-img {
-
+        width: 100%;
+        height: 100%;
     }
 
     .case-studies-txt-con {
+        padding: 24px;
+        position: absolute;
         align-self: flex-end;
+        max-width: 352px;
     }
 
     .case-studies-h {

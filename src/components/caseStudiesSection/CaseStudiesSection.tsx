@@ -1,36 +1,71 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { HeadingDark } from '../common';
+import { CaseStudiesCard } from './CaseStudiesCard';
+import Slider, {Settings} from "react-slick";
+import { getItems } from '../../services';
 
 import "./case-studies-section.scss";
-import { CaseStudiesCard } from './CaseStudiesCard';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import { ICard } from '../../types/card';
 
-const DATA = [
-    {
-        // imageUrl: "https://kj-code-challenge.s3.eu-west-1.amazonaws.com/olympian.jpeg",
-        subheading: "The only athlete in the world to do her Olympic routine in 2020",
-        heading: "The Olympian"
-    },
-    {
-        // imageUrl: "https://kj-code-challenge.s3.eu-west-1.amazonaws.com/dragon.jpeg",
-        subheading: "Grow your savings treasure and grow your dragon.",
-        heading: "The Savings Jar"
-    },
-    {
-        // imageUrl: "https://kj-code-challenge.s3.eu-west-1.amazonaws.com/skhokho.jpeg",
-        subheading: "Helping South Africans become #CashCleva with Skhokho and TymeBank",
-        heading: "Skhokho seMali"
-    }
-]
+const settings : Settings = {
+    className: "center",
+    centerMode: true,
+    centerPadding: "80px",
+
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+
+    variableWidth: true,
+
+    responsive: [
+        {
+            breakpoint: 540,
+            settings: {
+              centerPadding: "24px",
+            }
+        },
+        {
+            breakpoint: 420,
+            settings: {
+              centerPadding: "0px",
+              slidesToShow: 3,
+            }
+        }
+      ]
+};
 
 export const CaseStudiesSection : React.FC = () => {
+
+    const [data, setData] = useState(Array<ICard>);
+
+    useEffect(() => {
+        const getCards = async () => {
+            const cards = await getItems();
+            setData(cards);
+        }
+
+        getCards();
+    });
+
     return (
         <section className='case-studies-sec'>
-            <HeadingDark text='Case studies' />
-            <ul className='case-studies-con'>
-                {
-                    DATA.map((el,i) => <CaseStudiesCard heading={el.heading} subheading={el.subheading} key={i} />)
-                }
-            </ul>
+                <div className='case-studies-sub-h-con'>
+                    <HeadingDark text='Case studies' />
+                </div>
+                <section className='case-studies-caro-con'>
+                    <Slider {...settings}>
+                        {
+                            data.map((el,i) => <CaseStudiesCard title={el.title} description={el.description} imageUrl={el.imageUrl} key={i} />)
+                        }
+                    </Slider>
+                </section>
         </section>
     );
 }

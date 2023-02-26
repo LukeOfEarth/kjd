@@ -10,6 +10,10 @@ nav {
     padding: 0 80px;   
     display: flex;
 
+    @media (max-width: variables.$small) {
+        padding: 0;   
+    }
+
     .nav-inner {
         margin: 24px 20px;
         width: 100%;

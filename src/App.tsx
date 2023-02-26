@@ -3,12 +3,12 @@ import { Banner, Navbar, ServicesSection, CaseStudiesSection, ClientsSections, F
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Banner />
-      <ServicesSection />
-      <CaseStudiesSection />
-      <ClientsSections />
-      <Footer />
+        <Navbar />
+        <Banner />
+        <ServicesSection />
+        <CaseStudiesSection />
+        <ClientsSections />
+        <Footer />
     </div>
   )
 }
