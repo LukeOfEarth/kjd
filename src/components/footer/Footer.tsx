@@ -63,7 +63,7 @@ export const Footer : React.FC = () => {
                     <h3 className='footer-sub-h'>Have a project in mind? Let's make it happen</h3>
                     <ul className='footer-link-con'>
                         {
-                            LINKS.map((el, i) => <li><a className='footer-link' href={el.href} key={i}>{el.title}</a></li>)
+                            LINKS.map((el, i) => <li key={i}><a className='footer-link' href={el.href}>{el.title}</a></li>)
                         }
                     </ul>
                 </div>

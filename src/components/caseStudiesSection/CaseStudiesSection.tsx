@@ -52,7 +52,7 @@ export const CaseStudiesSection : React.FC = () => {
         }
 
         getCards();
-    });
+    }, []);
 
     return (
         <section className='case-studies-sec'>
